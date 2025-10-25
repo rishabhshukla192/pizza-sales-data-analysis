@@ -1,94 +1,124 @@
+# 🍕 Pizza Sales Data Analysis  
+### _By Rishabh Shukla_
+
 <p align="center">
-  <img src="images/pizza%20image.jpg" style="max-width: 100%; height: auto;" alt="Pizza Banner">
+  <img src="images/pizza%20image.jpg" alt="Pizza Banner" style="max-width: 100%; height: auto;">
 </p>
 
+---
 
-## Background and Overview
-Understanding customer behavior and product performance is crucial for optimizing sales in the food industry. This project explores a comprehensive dataset from a pizza sales database, analyzing sales trends, peak business hours, and product popularity to generate actionable business recommendations.
+## 📊 Background and Overview  
 
-
-## Data Structure Overview
-The dataset includes the following key tables and attributes:
-
-- **Orders**: Order ID, Date, Time  
-- **Order Details**: Order ID, Pizza ID, Quantity  
-- **Pizzas**: Pizza ID, Name, Size, Price  
-- **Pizza Types**: Pizza Type ID, Category, Ingredients  
-
-The data spans a continuous period with consistent timestamp granularity, allowing time-series and categorical analysis.
+Understanding customer behavior and product performance is crucial for optimizing sales in the food industry.  
+This project explores a **comprehensive pizza sales dataset** to analyze sales trends, peak business hours, and product popularity — ultimately generating actionable business recommendations.  
 
 ---
 
-## Executive Summary
-This report delivers a high-level view of sales performance across pizza categories, sizes, and time intervals. Our goal is to identify top-performing products, determine demand cycles, and uncover insights that support marketing strategies, inventory planning, and product development.
+## 🧩 Data Structure Overview  
 
-### Key Deliverables:
-- Highest revenue-generating pizza types  
-- Most ordered pizzas by volume  
-- Peak order hours  
-- Sales distribution by pizza size and category  
+The dataset consists of the following key tables and attributes:
 
----
+| Table | Description | Key Attributes |
+|--------|--------------|----------------|
+| **Orders** | Contains order information | Order ID, Date, Time |
+| **Order Details** | Connects orders to pizzas | Order ID, Pizza ID, Quantity |
+| **Pizzas** | Details of each pizza sold | Pizza ID, Name, Size, Price |
+| **Pizza Types** | Categorization and ingredients | Pizza Type ID, Category, Ingredients |
 
-## Insights and Deep Dive
-
-### 1. Hourly Order Distribution
-- Peak order times were observed between **12 PM – 2 PM** and **6 PM – 8 PM**.
-
-![Hourly Orders](images/hourly%20distribution.png)
+The dataset spans a continuous period with consistent timestamps, making it suitable for **time-series and categorical analysis**.
 
 ---
 
-### 2. Pizza Size Preference
-- **Medium and Large** pizzas lead in popularity and sales.
+## 🚀 Executive Summary  
 
-![Pizza Sizes](images/count%20of%20different%20pizza%20sizes.png)
+This analysis provides insights into:
+- 🍕 **Top-performing pizzas by revenue and quantity**  
+- ⏰ **Peak order hours**  
+- 📐 **Preferred pizza sizes**  
+- 💸 **Sales distribution by category**
 
----
-
-### 3. Top Ordered Pizzas by Quantity
-- Highlights pizzas that are most frequently ordered by volume.
-
-![Top Ordered Pizzas](images/top%2010%20pizzas%20ordered%20quantitatively.png)
+These insights support **marketing strategy**, **inventory planning**, and **menu optimization**.
 
 ---
 
-### 4. Top Revenue-Generating Pizzas
-- Focuses on the pizzas bringing in the most revenue.
+## 📈 Insights and Deep Dive  
 
-![Top Revenue Pizzas](images/top%2015%20revenue%20generating%20pizzas.png)
+### 1️⃣ Hourly Order Distribution  
+Peak order times were observed between **12 PM – 2 PM** and **6 PM – 8 PM**, aligning with lunch and dinner hours.
 
----
-
-### 5. Revenue by Pizza Category
-- Breaks down overall sales by pizza category (e.g., Veggie, Classic, Chicken).
-
-![Category Revenue](images/revenue%20generated%20by%20each%20category%20of%20pizza.png)
+<p align="center">
+  <img src="images/hourly%20distribution.png" alt="Hourly Orders" width="600">
+</p>
 
 ---
 
-## Recommendations
+### 2️⃣ Pizza Size Preference  
+**Medium and Large pizzas** dominate both in popularity and total sales.
 
-Based on the analysis, the following business strategies are recommended:
-
-- **Time-based Promotions**: Offer discounts during slow hours (e.g., 3–5 PM) to increase throughput.  
-- **Inventory Prioritization**: Ensure top-performing pizzas like *The Classic Deluxe* and *The Hawaiian* are always in stock during peak hours.  
-- **Bundling Strategy**: Introduce combo deals that include high-margin but underperforming items.  
-- **Category Campaigns**: Promote underperforming categories like Veggie or Mediterranean through themed weeks or offers.  
-- **Menu Optimization**: Consider updating or removing low-demand pizzas to streamline operations.  
+<p align="center">
+  <img src="images/count%20of%20different%20pizza%20sizes.png" alt="Pizza Size Count" width="600">
+</p>
 
 ---
 
-## How to Run This Project
+### 3️⃣ Top Ordered Pizzas (by Quantity)  
+These pizzas are the crowd favorites based on order volume.
 
-1. Clone this repository
-2. Open the `.csv` files in Excel or import them into Python or Jupyter for analysis
-3. Visualizations are available in the `/images/` folder
+<p align="center">
+  <img src="images/top%2010%20pizzas%20ordered%20quantitatively.png" alt="Top Ordered Pizzas" width="600">
+</p>
 
 ---
 
-**Developed by:** *Rishabh Shukla*  
-**Tools Used:** Excel, MYSQL, Python (optional)  
-**Dataset:** See `pizza_sales.zip` for the raw data
+### 4️⃣ Top Revenue-Generating Pizzas  
+Identifying pizzas that contribute the most to overall sales revenue.
 
-> All images and charts used in this README are stored in the `/images/` folder of this repository. Please ensure they are properly named as referenced above.
+<p align="center">
+  <img src="images/top%2015%20revenue%20generating%20pizzas.png" alt="Top Revenue Pizzas" width="600">
+</p>
+
+---
+
+### 5️⃣ Revenue by Pizza Category  
+Revenue breakdown by category (Veggie, Chicken, Classic, etc.).
+
+<p align="center">
+  <img src="images/revenue%20generated%20by%20each%20category%20of%20pizza.png" alt="Revenue by Category" width="600">
+</p>
+
+---
+
+## 💡 Business Recommendations  
+
+| Strategy | Description |
+|-----------|-------------|
+| 🕒 **Time-Based Promotions** | Offer discounts during slow hours (3–5 PM) to boost sales. |
+| 📦 **Inventory Prioritization** | Stock up on top-selling pizzas (e.g., *Classic Deluxe*, *Hawaiian*) during peak hours. |
+| 🍽️ **Bundling Strategy** | Combine popular items with low-performing ones in combo deals. |
+| 📣 **Category Campaigns** | Promote underperforming categories like Veggie through themed offers. |
+| 🧾 **Menu Optimization** | Consider updating or removing low-demand pizzas to reduce waste. |
+
+---
+
+## 🛠️ Tools & Technologies Used  
+
+| Tool | Purpose |
+|------|----------|
+| **Microsoft Excel** | Data cleaning, analysis, and visualization |
+| **MySQL** | Querying and relational database operations |
+| **Python (optional)** | For deeper data visualization and automation |
+| **PowerPoint / Canva** | Presentation and report design |
+
+---
+
+## 🧰 How to Run This Project  
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/rishabhshukla192/pizza-sales-data-analysis.git
+
+Rishabh Shukla  
+B.Tech,Civil Engineering, IIT (ISM) Dhanbad  
+Email: rishabhshukla9140@gmail.com  
+LinkedIn: https://www.linkedin.com/in/rishabhshukla192
+ 
